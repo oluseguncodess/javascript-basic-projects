@@ -2,7 +2,7 @@ const colors = ["green", "red", "rgba(133,122,200)", "#f15025"];
 
 const clickMe = document.getElementById('btn');
 
-const color = document.querySelector('.color');
+const color = document.getElementsByClassName('color');
 
 clickMe.addEventListener("click", function() {
     const randomNumber = getRandomNumber();
