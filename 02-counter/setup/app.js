@@ -6,12 +6,20 @@ const btns = document.querySelectorAll(".btn");
 
 
 // Access the counter value
-const counter = document.getElementById("value");
+let counter = document.getElementById("value");
 
 btns.forEach(function(btn) {
     btn.addEventListener("click", (e)=> {
         const current = e.currentTarget.classList;
-        console.log(current);
+        
+        // write the conditional for each click of the button
+        current.contains("increase") ? count ++ :
+        current.contains ("decrease") ? count -- : 
+        count = 0;
+
+        counter.innerHTML = count;
+
     })
+
 });
 
