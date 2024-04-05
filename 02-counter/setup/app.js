@@ -9,8 +9,9 @@ const btns = document.querySelectorAll(".btn");
 const counter = document.getElementById("value");
 
 btns.forEach(function(btn) {
-    btn.addEventListener("click", function(e) {
-        
+    btn.addEventListener("click", (e)=> {
+        const current = e.currentTarget.classList;
+        console.log(current);
     })
 });
 
