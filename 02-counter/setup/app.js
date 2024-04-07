@@ -12,7 +12,7 @@ btns.forEach(function(btn) {
     btn.addEventListener("click", (e)=> {
         const current = e.currentTarget.classList;
         
-        // write the conditional for each click of the buttong
+        // write the conditional for each click of the button
         current.contains("increase") ? count ++ :
         current.contains ("decrease") ? count -- : 
         count = 0;
